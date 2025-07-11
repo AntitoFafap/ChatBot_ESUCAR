@@ -1,22 +1,57 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- Idioma -->
-<head>
-  <meta charset="UTF-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chatbot Asistente</title> 
-  <link rel="stylesheet" href="estilo.css" /> <!-- Referencia CSS -->
-</head>
-<body>
-  <!-- Banner -->
-  <div class="banner"></div>
+<html lang="es">
+  <!-- Idioma -->
 
-  <!-- Contenedor de entrada -->
-  <div class="input-container">
-    <div class="input-wrapper">
-      <input type="text" placeholder="Escribe un mensaje..." /> <!-- Caja de Texto -->
-      <button class="send-button">Enviar</button> <!-- Botón de enviar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Asistente</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <!-- Referencia CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=eject,person,robot,settings"
+    />
+    <!-- Fuente de iconos (Google) -->
+  </head>
+
+  <body>
+    <header>
+      <div class="banner">
+        <div class="banner-container">
+          <h4>Asistente Carabineros</h4>
+          <div class="banner-container-end">
+            <span class="material-symbols-outlined btn-config">settings</span>
+            <button class="btn">
+              <span class="material-symbols-outlined"> person </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="chat-container">
+      <div id="chat-wrapper">
+        <!-- Los mensajes se agregarán dinámicamente aquí -->
+      </div>
     </div>
-  </div>
-</body>
-</html>
 
+    <footer>
+      <div class="input-container">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Escribe un mensaje..."
+            autofocus
+          />
+          <button class="btn" id="send-btn">
+            <span class="material-symbols-outlined">eject</span>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
