@@ -1,9 +1,11 @@
 :root {
-  --BG1: #0B1E13;            /* Fondo General */
-  --BG2: #112d1e;            /*Fondo Banner*/
-  --DT1: #2f5239;            /* Contorno Caja de Texto */
-  --GT1: #1B3B2C;            /* Globo Texto */
-  --TX: #e9bdbdfa;                /*Color Texto*/
+  --BG1: #0A1E14;            /* Fondo General */
+  --BG2: #0F2A1C;            /*Fondo Banner*/
+  --DT1: #2A563E;            /* Contorno Caja de Texto */
+  --MSG1: #1B3B2C;            /* Globo Texto User */ 
+  --MSG2: #0F2A1C;            /* Globo Texto Bot */
+  --TX: #fff;                /*Color Texto*/
+  --BTN: #2A563E ;          /* Color Botón */
 
 }
 
@@ -32,7 +34,7 @@
 /* Estilos del cuerpo */
 body {
   margin: 0;
-  background-color: var(--TX); 
+  background-color: var(--BG1); 
   font-family: Arial, sans-serif;
   color: var(--TX);
   height: 100vh;
@@ -50,15 +52,29 @@ body {
   height: 50px;
   background-color: var(--BG2);
   border-radius: 0;    /* Quita bordes redondeados para que sea rectangular */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
   z-index: 1000;
-  background-color: var(--BG2);
-  padding: 10px 20px;
+  padding: 10px 20px; 
   border-bottom: 1px solid var(--DT1); /* Línea separadora */
+
+}
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;            /* Centra verticalmente */
+  height: 100%;
+}
+
+.banner-container-end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;            /* Centra verticalmente */
+  margin-left: auto;              /* Empuja el contenido a la derecha */
+  margin-right: 10%;
+  width: 10%;
 }
 /* Contenedor principal de entrada */
 .input-container {
-  display: flex;
+  display: flex ;
   flex-direction: column;
   align-items: center; 
   justify-content: center;
@@ -73,21 +89,44 @@ body {
   max-width: 1500px; /* Mayor límite máximo */
   display: flex;
   align-items: center;
-  background-color: transparent;
-  border: none;
-  border-radius: 20px;
+  background-color: var(--MSG2);
+  border: 2px solid var(--DT1);
+  border-radius: 12px;
   padding: 5px;
+}
+/* Botón de enviar */
+.btn {
+  background-color: var(--BTN);
+  color: var(--TX);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  
+}
+.btn:hover {
+  background-color: var(--DT1);
+  color: var(--TX);
+}
+.btn-config {
+  background-color: transparent;
+  color: var(--TX);
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-right: 15px; /* Espacio entre el icono y el botón */
 }
 
 /* Campo de texto para enviar mensajes */ 
 input[type="text"] {
   flex: 1;
-  border: 1px solid var(--DT1);
-  background-color: var(--GT1);
-  border-radius: 12px;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
   padding: 15px;
   width: 100%;
-  color: var(--text-color);
+  color: var(--TX);
   font-size: 1em;
   outline: none;
   box-shadow: none;

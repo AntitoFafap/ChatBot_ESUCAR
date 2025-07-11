@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- Idioma -->
-<head>
-  <meta charset="UTF-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chatbot Asistente</title> 
-  <link rel="stylesheet" href="estilo.css" /> <!-- Referencia CSS -->
-</head>
-<body>
-  <!-- Banner -->
-  <div class="banner"></div>
+<html lang="es">
+  <!-- Idioma -->
 
-  <!-- Contenedor de entrada -->
-  <div class="input-container">
-    <div class="input-wrapper">
-      <input type="text" placeholder="Escribe un mensaje..." /> <!-- Caja de Texto -->
-      <button class="send-button">Enviar</button> <!-- Botón de enviar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Asistente</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <!-- Referencia CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=eject,settings"
+    />
+    <!-- Fuente de iconos (Google) -->
+  </head>
+
+  <body>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="banner-container">
+        <h4>Asistente Carabineros</h4>
+        <!-- Título del banner -->
+         <div class="banner-container-end">
+          <span class="material-symbols-outlined btn-config">settings</span>
+          <!-- Icono de configuración -->
+          <button class="btn">C</button>
+          <!-- Icono de Perfil -->
+         </div>
+      </div>
     </div>
-  </div>
-</body>
-</html>
 
+    <!-- Contenedor de entrada -->
+    <div class="input-container">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Escribe un mensaje..." />
+        <!-- Caja de Texto -->
+        <button class="btn">
+          <span class="material-symbols-outlined">eject</span>
+        </button>
+        <!-- Botón de enviar -->
+      </div>
+    </div>
+  </body>
+</html>
