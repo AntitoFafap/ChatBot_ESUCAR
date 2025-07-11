@@ -1,0 +1,97 @@
+:root {
+  --BG1: #0B1E13;            /* Fondo General */
+  --BG2: #112d1e;            /*Fondo Banner*/
+  --DT1: #2f5239;            /* Contorno Caja de Texto */
+  --GT1: #1B3B2C;            /* Globo Texto */
+  --TX: #e9bdbdfa;                /*Color Texto*/
+
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shield-icon {
+  font-size: 1.2rem;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings {
+  font-size: 1.1rem;
+  
+  cursor: pointer;
+}
+
+/* Estilos del cuerpo */
+body {
+  margin: 0;
+  background-color: var(--TX); 
+  font-family: Arial, sans-serif;
+  color: var(--TX);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Banner */
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;         /* Ocupa todo el ancho */
+  height: 50px;
+  background-color: var(--BG2);
+  border-radius: 0;    /* Quita bordes redondeados para que sea rectangular */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  z-index: 1000;
+  background-color: var(--BG2);
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--DT1); /* Línea separadora */
+}
+/* Contenedor principal de entrada */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--BG1);
+  gap: 8px;
+}
+
+/* Contenedor de la caja de texto */
+.input-wrapper {
+  width: 95%;       /* Aumenta el ancho del contenedor */
+  max-width: 1500px; /* Mayor límite máximo */
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+/* Campo de texto para enviar mensajes */ 
+input[type="text"] {
+  flex: 1;
+  border: 1px solid var(--DT1);
+  background-color: var(--GT1);
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%;
+  color: var(--text-color);
+  font-size: 1em;
+  outline: none;
+  box-shadow: none;
+}
+
+
+
