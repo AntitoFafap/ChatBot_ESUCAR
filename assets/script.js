@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="message-content">
             <p>${message}</p>
             <div class="message-icon">
-                <span class="material-symbols-outlined btn">person</span>
+                <i class="bi bi-person btn-config"></i>
             </div>
         </div>
     `;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     messageDiv.innerHTML = `
         <div class="message-content">
             <div class="message-icon">
-                <span class="material-symbols-outlined btn">robot</span>
+                <i class="bi bi-robot btn-config"></i>
             </div>
             <p>${message}</p>
         </div>
