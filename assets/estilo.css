@@ -39,16 +39,15 @@ html{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
+  max-width: 90%;
   color: var(--TX);
+  margin-left: 10%;
 }
-.banner-container-end {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: auto;
+.end {
+  gap: 10px;
   margin-right: 10%;
-  width: 10%;
 }
 /* Secciones Flex */
 .left-section,
