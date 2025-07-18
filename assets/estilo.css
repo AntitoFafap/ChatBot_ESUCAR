@@ -12,7 +12,7 @@ html{
   background-color: var(--BG1);
 }
 
-body, .body{
+.body{
   margin: 0;
   background-color: var(--BG1);
   font-family: Arial, sans-serif;
@@ -85,7 +85,7 @@ body, .body{
 #chat-wrapper,
 .chat-wrapper {
   width: 95%;
-  max-width: 100%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -98,8 +98,7 @@ body, .body{
   display: flex;
   align-items: center;
   justify-content: center; /* Asegura que el texto se centre */
-
-  max-width: 90%;
+  max-width: 95%;
   word-wrap: break-word;
   margin-bottom: 10px;
   padding: 10px 15px;
