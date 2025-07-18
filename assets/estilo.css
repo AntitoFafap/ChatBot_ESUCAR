@@ -8,6 +8,10 @@
   --BTN: #2a563e;    /* Color Botón */
 }
 /* Estructura Principal */
+html{
+  background-color: var(--BG1);
+}
+
 body, .body{
   margin: 0;
   background-color: var(--BG1);
@@ -95,7 +99,7 @@ body, .body{
   align-items: center;
   justify-content: center; /* Asegura que el texto se centre */
 
-  max-width: 80%;
+  max-width: 90%;
   word-wrap: break-word;
   margin-bottom: 10px;
   padding: 10px 15px;
